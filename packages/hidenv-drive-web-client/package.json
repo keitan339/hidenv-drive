@@ -1,0 +1,28 @@
+{
+  "name": "@hidenv-drive/web-client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode=production",
+    "start": "npx webpack serve --config webpack.config.js --mode=development",
+    "serve": "http-server dist -p 4000 -g -b -o /",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@mui/icons-material": "5.11.0",
+    "@mui/material": "5.11.2",
+    "aws-amplify": "5.0.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.6.1"
+  },
+  "devDependencies": {
+    "@hidenv-drive/web-build": "^1.0.0",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "http-server": "14.1.1"
+  }
+}

@@ -1,0 +1,14 @@
+Development
+// Amazon Cognito 認証情報プロバイダーを初期化します
+AWS.config.region = 'ap-northeast-1'; // リージョン
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'ap-northeast-1:275915b4-62a6-4014-be3f-3e84902537cc',
+});
+
+
+Production
+// Amazon Cognito 認証情報プロバイダーを初期化します
+AWS.config.region = 'ap-northeast-1'; // リージョン
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'ap-northeast-1:f9e0050c-a9f4-4963-b83e-13bb193b5669',
+});
